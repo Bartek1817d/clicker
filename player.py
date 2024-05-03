@@ -84,4 +84,5 @@ class KeyboardCommand(Command):
 
 keyboard_listener.start()
 keyboard_listener.join()
-play_thread.join()
+if play_thread:
+    play_thread.join()
