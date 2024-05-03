@@ -57,10 +57,11 @@ class MouseCommand(Command):
     def __init__(self, tokens: list):
         self.x = int(tokens[0])
         self.y = int(tokens[1])
+        self.double = len(tokens) > 2
 
     def execute(self):
         self.controller.position = (self.x, self.y)
-        self.controller.click(mouse.Button.left)
+        self.controller.click(mouse.Button.left, 2 if self.double else 1)
 
 
 class KeyboardCommand(Command):
