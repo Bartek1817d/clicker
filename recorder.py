@@ -5,7 +5,7 @@ from time import time
 
 file = open("keys.txt", "w")
 
-START_KEY = Key.space
+START_KEY = Key.ctrl_r
 STOP_KEY = Key.esc
 DOUBLE_CLICK_TIME = 0.3
 

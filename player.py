@@ -4,7 +4,7 @@ from time import sleep
 from pynput.keyboard import Key
 from threading import Thread
 
-START_KEY = Key.space
+START_KEY = Key.ctrl_r
 STOP_KEY = Key.esc
 
 started = False
